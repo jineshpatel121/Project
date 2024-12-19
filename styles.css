@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.black-background {
+    background-color: #000;
+    color: #fff;
+}
+
+body.white-background {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.website-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    font-family: Impact, sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Bubble Style */
+.login-container.bubble-style {
+    border: 5px solid #00aaff; /* Bubble border size */
+    border-radius: 60px; /* Larger bubble style */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding for larger box */
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #00aaff;
+}
+
+.signup-link a {
+    color: #00aaff;
+}
+
+.theme-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.forgot-password a {
+    color: #00aaff; /* Light blue color */
+    text-decoration: none;
+}
+
+.forgot-password a:visited {
+    color: #00aaff; /* Ensures it stays light blue even after clicking */
+}
+
+.forgot-password a:hover {
+    color: #007bff; /* Optional: Slightly darker blue on hover */
+}
+/* LOCKED IN - Top Left */
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #00aaff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* PRODUCT CATALOG - Top Middle */
+.top-middle {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Search Section - Centered and Enlarged */
+.search-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.search-input, .price-input {
+    padding: 12px;
+    margin: 5px;
+    font-size: 1.2rem;
+    width: 200px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.search-btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Available Products Section */
+.product-list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-list h2 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Product Items */
+.product-list ul {
+    list-style: none;
+}
+
+.product-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* No Products Found Message */
+.no-products {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General Backgrounds */
+body.black-background {
+    background-color: #000;
+    color: #fff;
+}
+
+body.white-background {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* LOCKED IN - Top Left */
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #00aaff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* PRODUCT CATALOG - Top Middle */
+.top-middle {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Search Section - Centered and Enlarged */
+.search-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.search-input, .price-input {
+    padding: 12px;
+    margin: 5px;
+    font-size: 1.2rem;
+    width: 200px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.search-btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Available Products Section */
+.product-list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-list h2 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Product Items */
+.product-list ul {
+    list-style: none;
+}
+
+.product-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* No Products Found Message */
+.no-products {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .top-left, .top-middle {
+        font-size: 1.5rem;
+    }
+
+    .search-input, .price-input {
+        width: 150px;
+    }
+
+    .search-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
