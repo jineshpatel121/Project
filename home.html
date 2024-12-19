@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCKED IN - Product Catalog</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body class="black-background">
+    <!-- Website Header -->
+    <header>
+        <div class="top-left">LOCKED IN</div>
+        <div class="top-middle">PRODUCT CATALOG</div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <div class="search-section">
+        <form th:action="@{/products}" method="get">
+            <input class="search-input" type="text" name="search" placeholder="Search products..." />
+            <input class="price-input" type="number" name="minPrice" placeholder="Min Price" step="0.01" />
+            <input class="price-input" type="number" name="maxPrice" placeholder="Max Price" step="0.01" />
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Product List Section -->
+    <div class="product-list">
+        <h2>Available Products</h2>
+        <ul>
+            <li th:each="product : ${products}">
+                <strong th:text="${product.name}">Product Name</strong> - 
+                $<span th:text="${product.price}">0.00</span>
+            </li>
+        </ul>
+        <!-- No Products Found Message -->
+        <p class="no-products" th:if="${products.isEmpty()}">No products found.</p>
+    </div>
+</body>
+</html>
